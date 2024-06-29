@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiddengems Ice Cream Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hiddengems Ice Cream Shop</h1>
+        <p>Here is Your Choice of Ice Cream So, choose Wisely Which Scoop you Want!</p>
+        <div class="catalogue">
+            <div class="ice-cream">
+                <img src="vannila.jpeg" alt="Vanilla Dream">
+                <h2>Vanilla Dream</h2>
+                <p>$3.50</p>
+                <button onclick="buyNow('Vanilla Dream')">Buy Now</button>
+            </div>
+            <div class="ice-cream">
+                <img src="chocolate.jpeg" alt="Chocolate Bliss">
+                <h2>Chocolate Bliss</h2>
+                <p>$4.00</p>
+                <button onclick="buyNow('Chocolate Bliss')">Buy Now</button>
+            </div>
+            <div class="ice-cream">
+                <img src="strawberry.jpeg" alt="Strawberry Delight">
+                <h2>Strawberry Delight</h2>
+                <p>$3.75</p>
+                <button onclick="buyNow('Strawberry Delight')">Buy Now</button>
+            </div>
+            <div class="ice-cream">
+                <img src="mint.jpeg" alt="Mint Magic">
+                <h2>Mint Magic</h2>
+                <p>4.25$</p>
+                <button onclick="buyNow('Mint Magic')">Buy Now</button>
+            </div>
+            <div class="ice-cream">
+                <img src="cookie.jpeg" alt="Cookie Crunch">
+                <h2>Cookie Crunch</h2>
+                <p>$4.50</p>
+                <button onclick="buyNow('Cookie Crunch')">Buy Now</button>
+            </div>
+            <div class="ice-cream">
+                <img src="caremal.jpeg" alt="Caramel Swirl">
+                <h2>Caramel Swirl</h2>
+                <p>$4.75</p>
+                <button onclick="buyNow('Caramel Swirl')">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmationPopup" class="popup">
+        <div class="popup-content">
+            <p>Do you want to confirm your order for <span id="iceCreamName"></span>?</p>
+            <button onclick="confirmOrder()">Confirm</button>
+            <button onclick="closePopup()">Cancel</button>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message">
+        <p>Order Successful!</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
